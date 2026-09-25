@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="cyberman — systematic completion, stabilization and integration work for AROS.">
+  <title>cyberman — AROS Completion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="#top">cyberman</a>
+      <nav aria-label="Primary navigation">
+        <a href="#completion">Completion</a>
+        <a href="#method">Method</a>
+        <a href="#links">Links</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <a class="aros-mark" href="https://github.com/aros-development-team/AROS" aria-label="AROS Research Operating System">
+        <img src="https://raw.githubusercontent.com/cyberman/cyberman/main/assets/AROS_300x150.png" alt="AROS">
+      </a>
+
+      <p class="eyebrow">AROS COMPLETION</p>
+      <h1>Make the system more complete,<br>one understood contract at a time.</h1>
+      <p class="lead">
+        I contribute to AROS with a focus on system completion, stabilization and integration.
+        The work starts with a subsystem and its behaviour — not with a hunt for isolated bugs.
+      </p>
+
+      <div class="hero-links">
+        <a class="button primary" href="#completion">See the workstreams</a>
+        <a class="button" href="https://github.com/cyberman">GitHub profile</a>
+      </div>
+    </section>
+
+    <section class="statement">
+      <div class="wrap narrow">
+        <p>
+          This is not a PR counter and not a daily changelog.
+          It is a map of coherent AROS work: what has been examined, which gaps belong together,
+          and where the system is becoming more complete.
+        </p>
+      </div>
+    </section>
+
+    <section id="completion" class="section wrap">
+      <div class="section-heading">
+        <p class="eyebrow">COMPLETION MAP</p>
+        <h2>Workstreams</h2>
+        <p>Each stream represents a system area being understood and improved as a whole.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="card-top">
+            <h3>Shell &amp; Console</h3>
+            <span class="status active">active / advanced</span>
+          </div>
+          <p>
+            Command semantics, redirection, console geometry, parsing, lifecycle and native defaults.
+            Fixes are split into small upstream changes after the surrounding behaviour is understood.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <h3>Clipboard</h3>
+            <span class="status analysis">analysis</span>
+          </div>
+          <p>
+            System-level clipboard behaviour, interoperability and the path from manual transfer
+            toward reliable native workflows.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <h3>Desktop &amp; Wanderer</h3>
+            <span class="status active">active</span>
+          </div>
+          <p>
+            Native desktop behaviour, ToolType discovery, window operations and integration that
+            should feel like part of the operating system rather than an add-on.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <h3>AmigaGuide</h3>
+            <span class="status qualified">core work</span>
+          </div>
+          <p>
+            Native help-service behaviour, secure command handling, synchronous viewer integration
+            and compatibility-oriented system contracts.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <h3>Networking</h3>
+            <span class="status active">active</span>
+          </div>
+          <p>
+            Configuration contracts, native system integration and the missing pieces between
+            available network functionality and a complete user-facing system.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <h3>Build &amp; Packaging</h3>
+            <span class="status qualified">ongoing</span>
+          </div>
+          <p>
+            Build reliability, path handling, package semantics and repository structure —
+            the less visible work that makes future development safer and easier to review.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="method" class="section method">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">METHOD</p>
+          <h2>Subsystem before patch.</h2>
+        </div>
+
+        <div class="method-grid">
+          <div>
+            <span class="step">01</span>
+            <h3>Understand the existing system</h3>
+            <p>Read the implementation, history and neighbouring contracts before deciding what is wrong.</p>
+          </div>
+          <div>
+            <span class="step">02</span>
+            <h3>Compare actual and intended behaviour</h3>
+            <p>Separate missing capability, incomplete behaviour and genuine regression from mere preference.</p>
+          </div>
+          <div>
+            <span class="step">03</span>
+            <h3>Group related defects</h3>
+            <p>Treat recurring causes and shared boundaries as defect classes instead of unrelated one-off bugs.</p>
+          </div>
+          <div>
+            <span class="step">04</span>
+            <h3>Submit small, reviewable changes</h3>
+            <p>Keep the public patch narrow while carrying the analysis, builds and runtime qualification behind it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="links" class="section wrap">
+      <div class="section-heading">
+        <p class="eyebrow">LINKS</p>
+        <h2>Where the work lands</h2>
+      </div>
+
+      <div class="link-list">
+        <a href="https://github.com/aros-development-team/AROS">
+          <span>AROS Research Operating System</span>
+          <small>upstream source</small>
+        </a>
+        <a href="https://github.com/cyberman">
+          <span>cyberman</span>
+          <small>GitHub profile and contributions</small>
+        </a>
+        <a href="https://github.com/Kitty-Mushers">
+          <span>🐈‍⬛ Kitty-Mushers</span>
+          <small>development organization</small>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span>cyberman · AROS completion, stabilization and integration</span>
+      <span>🐈‍⬛ Kitty-Mushers</span>
+    </div>
+  </footer>
+</body>
+</html>
